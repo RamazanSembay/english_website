@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css ">
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js " charset="utf-8"></script>
+
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
+
+    <!---custom css link--->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // toggle sub-menus
+            $(".sub-btn").click(function () {
+                $(this).next(".sub-menu").slideToggle();
+            });
+
+            // toggle more-menus
+            $(".more-btn").click(function () {
+                $(this).next(".more-menu").slideToggle();
+            });
+
+            // javascript for the responsive navigaiton menu
+            var menu = document.querySelector(".menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
+
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("active");
+            });
+
+            closeBtn.addEventListener("click", () => {
+                menu.classList.remove("active");
+            });
+
+            // javascript for the navigation bar effects on scroll
+            window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.screenY > 0);
+            });
+        }); 
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="img/logo_coco.svg"></a>
+        <div class="navigation">
+            <ul class="menu">
+                <div class="close-btn"></div>
+                <li class="menu-item">
+                    <a class="sub-btn" href="#">MENU <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                        <li class="sub-item">
+                            <a href="registration.html">Sign up</a>
+                        </li>
+                        <li class="sub-item">
+                            <a href="Leaderboard">Leaderboard</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a class="sub-btn" href="begginer.html">BEGGINER</i></a>
+                </li>
+                <li class="menu-item"> <a href="elementary.html">ELEMENTARY</a></li>
+                <li class="menu-item"> <a href="pre-intermediate.html">PRE-INTERMEDITE / INTERMEDIATE</a></li>
+            </ul>
+        </div>
+        <div class="menu-btn"></div>
+    </header>
+
+    <!---home--->
+	<section class="home" id="home">
+		<div class="home-text">
+			<h4>Hello</h4>
+			<h1>Welcome to <br> Cocoon<span> Ed!</span></h1>
+			<div class="home__welcome">
+				<p class="home__welcome_description">We are the team of young teachers who want to make knowledge
+					accessible to everyone from anywhere in
+					the world at any time.</p>
+
+				<p class="home__welcome_description">We look forward to learning and developing with you!</p>
+
+				<p class="home__welcome_description">We welcome to all feedback!</p>
+			</div>
+			<!-- <a href="#" class="btn">Hire Me</a> -->
+		</div>
+	</section>
+
+    <!---about--->
+	<section class="BEGGINER" id="BEGGINER">
+		<div class="about-img">
+			<img src="img/avatar.png">
+		</div>
+
+		<div class="about-text">
+			<h2>BEGGINER</h2>
+			<h4>Hi! Nice to meet you! My name is Nazym Akhmetzhan.</h4>
+			<p>I am 19 and a student in university. I go to university in Astana. My favorite courses are Art, English,
+				and Chinese. Chinese is my hardest course. My professors are very friendly and smart. It’s my third year
+				in university now. I love it!</p>
+
+			<a href="index_about.html" class="btn">View</a>
+		</div>
+	</section>
+
+    <!---services--->
+	<section class="ELEMENTARY" id="ELEMENTARY">
+		<div class="main-text">
+			<h2>My Services</h2>
+			<h4>Better Design, Better Expericences</h4>
+		</div>
+
+		<div class="container-box">
+			<div class="c-mainbox">
+				<div class="container-img">
+					<img class="container-img" src="img/date.png">
+				</div>
+				<div class="container-text">
+					<p>Learn in your free time </p>
+				</div>
+				<div class="container-description">
+					<p>Spend your free time productively with the help of our educational team </p>
+				</div>
+			</div>
+
+			<div class="c-mainbox">
+				<div class="container-img">
+					<img class="container-img" src="img/clock.png">
+				</div>
+				<div class="container-text">
+					<p>Better late than never </p>
+				</div>
+				<div class="container-description">
+					<p>We welcome everyone. No age restrictions for learning! </p>
+				</div>
+			</div>
+
+			<div class="c-mainbox">
+				<div class="container-img">
+					<img class="container-img" src="img/book.png">
+				</div>
+				<div class="container-text">
+					<p>Extending vocabulary</p>
+				</div>
+				<div class="container-description">
+					<p>Read excerpts from books and articles, learn new words, rise your vocabulary level </p>
+				</div>
+			</div>
+
+			<div class="c-mainbox">
+				<div class="container-img">
+					<img class="container-img" src="img/laptop.png">
+				</div>
+				<div class="container-text">
+					<p>Practice makes perfect </p>
+				</div>
+				<div class="container-description">
+					<p>You can practice new knowledge on our site right after learning </p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="container-desc">
+			<p>We have a calm, fun environment for studying!</p>
+		</div>
+
+	</section>
+
+    <!---portfolio--->
+	<section class="PRE-INTERMEDITE / INTERMEDIATE" id="PRE-INTERMEDITE / INTERMEDIATE">
+		<div class="main-text">
+			<h2>Our teachers</h2>
+			<h4>Like Our Teachers And Their Achievements</h4>
+		</div>
+
+		<div class="portfolio-content">
+
+			<div class="row">
+				<img src="img/sertificate.png">
+				<div class="main-row">
+					<div class="row-text">
+						<h6>independent user B2</h6>
+					</div>
+
+				</div>
+				<h3>Certificate of cocoon'ed organizations</h3>
+				<div class="row-text">
+					<h6>A bachelor-level concentration in English to Speakers
+						of Other Languages (ESOL), along with my own
+						experience learning another language, have armed
+						me with proven teaching techniques, professional
+						resources and knowledge of the special requirements
+						needed to teach in a diverse classroom environment</h6>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+    <!---contact--->
+	<section class="contact" id="contact">
+		<div class="contact-text">
+			<h2>Contact Me</h2>
+			<h4>Let's Work Together</h4>
+			<p>Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry</p>
+			<div class="contact-list">
+				<li><a href="#">Mansoura - Dakhalia - Egyp</a></li>
+				<li><a href="#">dosbaeva03@gmal.com</a></li>
+				<li><a href="#">+7 705 470 9778</a></li>
+			</div>
+			
+		</div>
+
+		<!-- <div class="contact-form">
+			<form action="">
+				<input type="" placeholder="Enter Your Name" required>
+				<input type="email" placeholder="Enter Your Email" required>
+				<input type="" placeholder="Enter Your Subject">
+				<textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+				<input type="submit" value="Submit" class="send">
+			</form>
+		</div> -->
+	</section>
+
+    <!-- // -->
+
+    <div class="last-text">
+		<p>Cocoon Ed © 2022</p>
+	</div>
+</body>
+
+
+</html>

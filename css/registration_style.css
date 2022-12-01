@@ -1,0 +1,308 @@
+/*======= Google fonts =======*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*======= Main Css =======*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #D3E0CF, #8DBA7F);
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #D3E0CF, #8DBA7F);
+}
+
+.container form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b599b;
+}
+
+form .gender-details .gender-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 20px 0;
+    justify-content: space-between;
+
+}
+
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three {
+    border-color: #d9d9d9;
+    background: #8DBA7F;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form .button {
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #D3E0CF, #8DBA7F);
+}
+
+form .button input:hover {
+    background: linear-gradient(-135deg, #D3E0CF, #8DBA7F);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container .back-to {
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+
+.container .register-title {
+    text-decoration: none;
+    color: #32472b;
+}
+
+.container .register-title:hover {
+    color: #8DBA7F
+}
+
+@media (max-width: 1060px) {
+    body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background: linear-gradient(135deg, #D3E0CF, #8DBA7F);
+    }
+    
+    .container {
+        max-width: 700px;
+        width: 100%;
+        background: #fff;
+        padding: 25px 30px;
+        border-radius: 5px;
+    }
+    
+    .container .title {
+        font-size: 18px;
+        font-weight: 500;
+        position: relative;
+    }
+    
+    .container .title::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 30px;
+        background: linear-gradient(135deg, #D3E0CF, #8DBA7F);
+    }
+    
+    .container form .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 25px 0 12px 0;
+    }
+    
+    form .user-details .input-box {
+        margin-bottom: 25px;
+        width: calc(100% / 2 - 20px);
+    }
+    
+    .user-details .input-box .details {
+        display: block;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    
+    .user-details .input-box input {
+        height: 45px;
+        width: 100%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding-left: 8px;
+        font-size: 10px;
+        border-bottom-width: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    .user-details .input-box input:focus,
+    .user-details .input-box input:valid {
+        border-color: #9b599b;
+    }
+    
+    form .gender-details .gender-title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    form .gender-details .category {
+        display: flex;
+        width: 80%;
+        margin: 14px 0;
+        justify-content: space-between;
+    }
+    
+    .gender-details .category label {
+        display: flex;
+        align-items: center;
+    }
+    
+    .gender-details .category .dot {
+        height: 18px;
+        width: 18px;
+        background: #d9d9d9;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 5px solid transparent;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    #dot-1:checked~.category label .one,
+    #dot-2:checked~.category label .two,
+    #dot-3:checked~.category label .three {
+        border-color: #d9d9d9;
+        background: #8DBA7F;
+    }
+    
+    form input[type="radio"] {
+        display: none;
+    }
+    
+    form .button {
+        height: 45px;
+        margin: 45px 0;
+    }
+    
+    form .button input {
+        height: 100%;
+        width: 100%;
+        outline: none;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 500;
+        border-radius: 5px;
+        letter-spacing: 1px;
+        background: linear-gradient(135deg, #D3E0CF, #8DBA7F);
+    }
+    
+    form .button input:hover {
+        background: linear-gradient(-135deg, #D3E0CF, #8DBA7F);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .container .back-to {
+        font-size: 14px;
+        font-weight: 600;
+        position: relative;
+    }
+    
+    .container .register-title {
+        text-decoration: none;
+        color: #8DBA7F;
+    }
+    
+    .container .register-title:hover {
+        color: #8DBA7F
+    }
+}
